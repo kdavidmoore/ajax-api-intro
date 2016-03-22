@@ -1,7 +1,17 @@
 $(document).ready(function(){
+	$("#le-table").DataTable( {
+		"ajax": "test.json",
+		"columns": [
+			{ "value.timeSeries":"sourceInfo.siteName" },
+			{ "value.timeSeries":"sourceInfo.siteName" },
+			{ "value.timeSeries":"sourceInfo.siteName" },
+			{ "value.timeSeries":"sourceInfo.siteName" },
+			{ "value.timeSeries":"sourceInfo.siteName" }
+		]
+	});
 
 	// add a submit handler
-	$('#search').submit(function(){
+	/* $('#search').submit(function(){
 		var searchSym = $('#symbol').val();
 
 		// url for Yahoo's API
@@ -25,12 +35,7 @@ $(document).ready(function(){
 			} else {
 				newHTML = updateTable(stockInfo);
 			}
-			$('#ticker-body').html(newHTML);
-			
-			$(function() {
-				$('.footable').footable();
-			});
-			
+			$('#ticker-body').html(newHTML);			
 			addSpecialClasses();
 			});
 		event.preventDefault();
@@ -58,6 +63,6 @@ $(document).ready(function(){
 			}
 		});
 		// add other classes...if asking price > dayshigh....
-	}
+	} */
 
 });
