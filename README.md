@@ -1,4 +1,4 @@
-# Demonstration of AXAJ and Footables
+# Demonstration of AJAX and Footables
 
 ## Class project for March 22, 2016
 
